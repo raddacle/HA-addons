@@ -1,0 +1,28 @@
+name: "Cura VNC"
+version: "1.0.22"
+slug: "cura-vnc"
+description: "Cura slicer accessible via web VNC"
+arch:
+  - amd64
+  - armhf
+  - armv7
+  - aarch64
+url: "https://github.com/raddacle/PyramidX-Addons"
+ports:
+    5698/tcp: 5698
+options: {}
+schema: {}
+webui: "http://[HOST]:[PORT:5698]/"
+watchdog: "http://[HOST]:[PORT:5698]/"
+startup: application
+boot: auto
+panel_admin: true
+panel_icon: "mdi:alpha-c-circle-outline"
+panel_title: Cura
+ingress: true
+ingress_port: 5698
+host_network: true
+map:
+  - share:rw
+  - config:rw
+  - ssl:ro
