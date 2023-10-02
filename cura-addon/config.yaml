@@ -7,7 +7,7 @@ arch:
   - armhf
   - armv7
   - aarch64
-url: "https://github.com/raddacle/PyramidX-Addons"
+url: "https://github.com/raddacle/HA-addons"
 ports:
     5698/tcp: 5698
 options: {}
